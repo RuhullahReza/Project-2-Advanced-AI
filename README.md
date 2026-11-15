@@ -32,3 +32,6 @@ pip install -r requirements.txt
 ```bash
 deactivate
 ```
+
+## Code Convention
+* pastikan parameter fungsi menggunakan type signature
