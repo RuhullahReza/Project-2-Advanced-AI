@@ -21,6 +21,7 @@ class KNNClassifier:
         self._fit_normalisasi(X)            
         self.X_train = self._normalisasi_data(X) 
         self.y_train = np.asarray(y)
+        self.classes = np.unique(self.y_train)
         return self
     
     def _fit_normalisasi(self, X):
@@ -63,5 +64,18 @@ class KNNClassifier:
             hasil.append(nilai[np.argmax(jumlah)])
         return np.array(hasil)
 
-    def score(self, X_test, y_test):
-        return np.mean(self.predict(X_test) == np.asarray(y_test))
+    def predict_probability(self, X_test) -> np.ndarray:
+        X_test = np.asarray(X_test, dtype=float)
+        X_test = self._normalisasi_data(X_test)
+        D = self._compute_distances(X_test)
+        idx = np.argsort(D, axis=1)[:, :self.k]
+        label_tetangga = self.y_train[idx]
+
+        prob = []
+        for label in label_tetangga:
+            nilai, jumlah = np.unique(label, return_counts=True)
+            baris = np.zeros(len(self.classes))
+            posisi = np.searchsorted(self.classes, nilai)
+            baris[posisi] = jumlah / self.k
+            prob.append(baris)
+        return np.array(prob)
