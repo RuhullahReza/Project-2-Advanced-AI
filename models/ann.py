@@ -26,7 +26,7 @@ ACTIVATIONS = {
 }
 
 def softmax(z: np.ndarray) -> np.ndarray:
-    e = np.exp(z)
+    e = np.exp(z - z.max(axis=1, keepdims=True))
     return e / e.sum(axis=1, keepdims=True)
 
 def cross_entropy(y: np.ndarray, prob: np.ndarray) -> float:
