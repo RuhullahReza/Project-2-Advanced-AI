@@ -10,7 +10,7 @@ def euclidean_distance(X_test, X_train) -> np.ndarray:
 DISTANCE = {"manhattan": manhattan_distance, "euclidean": euclidean_distance}
 NORMALISASI = (None, "minmax", "zscore")
 
-class KNNClassifier:
+class KNN:
     def __init__(self, k: int = 3,  distance_metric: str = "euclidean", normalisasi: str = None):
         if k < 1:
             raise ValueError("k harus >= 1")
