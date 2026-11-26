@@ -30,7 +30,7 @@ def weighted_gini(count_left: np.ndarray, count_right: np.ndarray) -> float:
 
     return (n_left * gini(count_left) + n_right * gini(count_right)) / (n_left + n_right)
 
-class DecissionTree:
+class DecisionTree:
     def __init__(self, max_depth: int | None = None, min_samples_split: int = 2, max_features: int | None = None, random_state: int = 42):
         self.max_depth = max_depth
         self.min_samples_split = min_samples_split

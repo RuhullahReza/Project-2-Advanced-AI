@@ -1,6 +1,6 @@
 import numpy as np
 
-from models.decission_tree import DecissionTree
+from models.decision_tree import DecisionTree
 
 class RandomForest:
     def __init__(self, 
@@ -17,7 +17,7 @@ class RandomForest:
         self.random_state = random_state
 
         self.classes: np.ndarray | None = None
-        self.trees: list[DecissionTree] = []
+        self.trees: list[DecisionTree] = []
 
     def _resolve_max_feature(self, n_features: int) -> int | None:
         if self.max_features == "sqrt":
@@ -41,7 +41,7 @@ class RandomForest:
             index = rng.integers(0, n_samples, size = n_samples)
             seed = int(rng.integers(0, 2**31 - 1)) # seed nya random integer
 
-            tree = DecissionTree(max_depth=self.max_depth,
+            tree = DecisionTree(max_depth=self.max_depth,
                                  min_samples_split=self.min_samples_split,
                                  max_features=k,
                                  random_state=seed)
