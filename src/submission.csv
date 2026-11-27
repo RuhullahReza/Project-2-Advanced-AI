@@ -76,7 +76,7 @@ Student_ID,Target
 1158,Graduate
 1122,Graduate
 2497,Graduate
-556,Enrolled
+556,Graduate
 1442,Graduate
 4094,Graduate
 708,Graduate
@@ -110,7 +110,7 @@ Student_ID,Target
 2296,Graduate
 652,Dropout
 1322,Enrolled
-4024,Enrolled
+4024,Graduate
 3496,Graduate
 234,Enrolled
 3322,Dropout
@@ -168,7 +168,7 @@ Student_ID,Target
 1123,Graduate
 2588,Enrolled
 2979,Graduate
-3476,Graduate
+3476,Enrolled
 3563,Dropout
 1379,Dropout
 3576,Graduate
@@ -242,7 +242,7 @@ Student_ID,Target
 1835,Graduate
 793,Graduate
 3570,Dropout
-3035,Graduate
+3035,Enrolled
 4027,Enrolled
 1313,Graduate
 1854,Graduate
@@ -410,7 +410,7 @@ Student_ID,Target
 2340,Enrolled
 296,Graduate
 1211,Dropout
-1269,Enrolled
+1269,Dropout
 3305,Graduate
 866,Graduate
 2683,Dropout
@@ -524,7 +524,7 @@ Student_ID,Target
 4287,Enrolled
 2963,Enrolled
 3640,Graduate
-1546,Enrolled
+1546,Graduate
 2552,Graduate
 1600,Dropout
 3754,Graduate
@@ -536,7 +536,7 @@ Student_ID,Target
 3241,Enrolled
 483,Dropout
 2679,Enrolled
-2606,Graduate
+2606,Enrolled
 714,Graduate
 3825,Enrolled
 2291,Dropout
@@ -874,7 +874,7 @@ Student_ID,Target
 2620,Graduate
 1361,Dropout
 3472,Graduate
-3453,Enrolled
+3453,Graduate
 370,Graduate
 409,Graduate
 4210,Graduate
@@ -899,7 +899,7 @@ Student_ID,Target
 2644,Enrolled
 4328,Dropout
 3920,Graduate
-2835,Graduate
+2835,Enrolled
 3591,Dropout
 257,Enrolled
 3133,Graduate
@@ -1174,7 +1174,7 @@ Student_ID,Target
 3335,Enrolled
 918,Dropout
 4372,Graduate
-3638,Dropout
+3638,Graduate
 3873,Enrolled
 3838,Dropout
 1777,Graduate
@@ -1188,7 +1188,7 @@ Student_ID,Target
 3971,Graduate
 3700,Dropout
 384,Graduate
-2298,Graduate
+2298,Enrolled
 3935,Dropout
 2565,Graduate
 3931,Graduate
