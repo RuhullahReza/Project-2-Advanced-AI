@@ -8,7 +8,7 @@ class LogisticRegression:
         self.weights = None
         self.bias = None
         self.classes = None
-        self.cost_history = []
+        self.loss_history = []
 
     def softmax(self, z):
         e = np.exp(z - np.max(z, axis=1, keepdims=True))
@@ -19,6 +19,9 @@ class LogisticRegression:
         return float(-np.mean(np.sum(y * np.log(y_hat), axis=1)))
 
     def fit(self, X, y):
+        X = np.asarray(X, dtype=float)
+        y = np.asarray(y)
+
         m, n = X.shape
 
         # Inisialisasi
@@ -30,13 +33,14 @@ class LogisticRegression:
         y_one_hot = np.zeros((y.size, self.classes.size))
         y_one_hot[np.arange(y.size), inverse] = 1
 
+        self.loss_history = []
         for _ in range(self.epochs):
             # Forward Propagation
             z = np.dot(X, self.weights) + self.bias
             y_hat = self.softmax(z)
 
             # Loss
-            self.cost_history.append(self.categorical_cross_entropy(y_hat, y_one_hot))
+            self.loss_history.append(self.categorical_cross_entropy(y_hat, y_one_hot))
 
             # Gradient Descent
             dW = (np.dot(X.T, (y_hat - y_one_hot))) / m
