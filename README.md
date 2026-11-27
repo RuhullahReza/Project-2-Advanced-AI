@@ -49,15 +49,12 @@ deactivate
 4. Jalankan semua cell
 
 ## Pembagian Tugas
-Nama: Ruhullah Reza Muhammad Khan
+| Nama | NIM | Pembagian Tugas |
+| ------- | ------- | ------- |
+| Ruhullah Reza Muhammad Khan | 23526002 | <ul><li>Mengimplementasikan algoritma Decision Tree, Random Forest, ANN</li><li>Melakukan EDA, Data Cleaning, dan Transformation</li><li>Melatih ketiga model di atas (from-scratch dan sklearn)</li><li>Membuat laporan mengenai hal tersebut</li></ul> |
+| Ananda Myzza Marhelio | 23526008 | <ul><li>Mengimplementasikan algoritma Logistic Regression</li><li>Melatih model tersebut (from-scratch dan sklearn)</li><li>Membuat laporan mengenai hal tersebut</li></ul> |
+| Muhammad Adam Dzulqarnain | 23526031 | <ul><li>Mengimplementasikan algoritma KNN dan Ensemble (5 Base Model)</li><li>Melatih kedua model tersebut (from-scratch dan sklearn)</li><li>Membuat laporan mengenai hal tersebut</li></ul> |
 
-NIM: 23526002
-
-Kontribusi: 
-- Mengimplementasikan algoritma Decision Tree, Random Forest, ANN
-- Melakukan EDA, Data Cleaning, Dan Transformation
-- Melatih ketiga Model diatas
-- Membuat Laporan mengenai hal tersebut
 
 ## Code Convention
 * pastikan parameter fungsi menggunakan type signature
